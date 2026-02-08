@@ -17,3 +17,6 @@
 ### INSTALANDO PRISMA (FAZ A CONEXAO COM BD)
     -> npm install prisma --save-dev
 
+### STARTANDO O PRISMA:
+    -> npx prisma init
+

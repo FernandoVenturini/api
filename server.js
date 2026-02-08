@@ -14,7 +14,7 @@ const users = [];
 app.post('/users', (req, res) => {
     //console.log(req.body); // LOGANDO OS DADOS RECEBIDOS DO CLIENTE
     users.push(req.body); // ADICIONANDO OS DADOS RECEBIDOS AO ARRAY DE USUARIOS
-    res.status(201).json({ message: 'USUÁRIO ADICIONADO COM SUCESSO!' }); // RESPONDENDO COM UMA MENSAGEM DE SUCESSO
+    res.status(201).json(req.body); // RESPONDENDO COM UMA MENSAGEM DE SUCESSO
 });
 
 // DEFININDO UMA ROTA PARA O ENDPOINT RAIZ:
