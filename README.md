@@ -20,3 +20,6 @@
 ### STARTANDO O PRISMA:
     -> npx prisma init
 
+### INSTALANDO PRISMA CLIENT
+    -> npm install @prisma/client
+
