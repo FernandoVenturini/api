@@ -14,6 +14,9 @@
 ### RODANDO O SERVIDOR AUTOMATICAMENTE:
     -> node --watch server.js
 
+### GERAR O PRISMA CLIENT:
+    -> npx prisma generate
+
 ### INSTALANDO PRISMA (FAZ A CONEXAO COM BD)
     -> npm install prisma --save-dev
 
@@ -22,4 +25,7 @@
 
 ### INSTALANDO PRISMA CLIENT
     -> npm install @prisma/client
+
+### 
+    -> npx prisma db push
 
