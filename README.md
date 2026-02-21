@@ -8,12 +8,21 @@ Node.js - JavaScript runtime environment
 
 Express - Framework for building APIs
 
+<<<<<<< HEAD
 MongoDB - NoSQL database
+=======
+### GERAR O PRISMA CLIENT:
+    -> npx prisma generate
+
+### INSTALANDO PRISMA (FAZ A CONEXAO COM BD)
+    -> npm install prisma --save-dev
+>>>>>>> 494b39f423fd8e14f0a020b6d25199a65eb3015b
 
 Mongoose - ODM (Object Data Modeling) for MongoDB
 
 JavaScript - Programming language
 
+<<<<<<< HEAD
 🔧 Installation and Configuration
 Prerequisites
 Node.js (version 14 or higher)
@@ -46,3 +55,8 @@ DELETE /api/products/:id - Removes a product
 
 👥 Author
 Fernando Venturini - [devfernandouk@gmail.com]
+=======
+### 
+    -> npx prisma db push
+
+>>>>>>> 494b39f423fd8e14f0a020b6d25199a65eb3015b
