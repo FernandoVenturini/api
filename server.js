@@ -1,6 +1,11 @@
 // IMPORTANDO EXPRESS:
 import express from 'express';
 
+// IMPORTANDO PRISMA CLIENT
+import { PrismaClient } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
 // CRIANDO A APLICAÇÃO EXPRESS:
 const app = express();
 app.use(express.json()); // HABILITANDO O PARSE DE JSON PARA AS REQUISIÇÕES RECEBIDAS
@@ -13,7 +18,14 @@ const users = [];
 
 app.post('/users', (req, res) => {
     //console.log(req.body); // LOGANDO OS DADOS RECEBIDOS DO CLIENTE
-    users.push(req.body); // ADICIONANDO OS DADOS RECEBIDOS AO ARRAY DE USUARIOS
+    //users.push(req.body); // ADICIONANDO OS DADOS RECEBIDOS AO ARRAY DE USUARIOS
+    prisma.user.create({
+        data: {
+            name: req.body.name,
+            email: req.body.email,
+            age: req.body.age
+        }
+    })
     res.status(201).json(req.body); // RESPONDENDO COM UMA MENSAGEM DE SUCESSO
 });
 
